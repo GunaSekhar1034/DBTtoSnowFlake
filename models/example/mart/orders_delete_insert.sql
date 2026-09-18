@@ -2,7 +2,7 @@
     config(
         materialized='incremental',
         incremental_strategy= 'delete+insert',
-        unique_key='id'
+        unique_key='order_id'
     )
 }}
 with source as (
