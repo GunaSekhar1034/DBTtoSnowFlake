@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: demodb                # Logical name for the database
+    database: DEMO_DB            # Actual Snowflake database
+    schema: DBT_GUNASEKHAR1034  # Schema inside the database
+    tables:
+      - name: customers
+        description: "Customer master data"
+      - name: orders
+        description: "Orders placed by customers"
+      - name: products
+        description: "Product catalog"
